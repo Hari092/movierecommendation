@@ -1,12 +1,12 @@
 import { apiOptions } from "../utils/Constants";
 import { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import {  addTopMovies } from "../utils/movieSlice";
 
 const useTopMovies = () => {
   const dispatch = useDispatch();
 
-  const top =useSelector((store)=>store.movie.topMovies);
+  // const top =useSelector((store)=>store.movie.topMovies);
 
   const topMovies = async () => {
     const data = await fetch(
@@ -18,7 +18,7 @@ const useTopMovies = () => {
     dispatch(addTopMovies(json.results));
   };
   useEffect(() => {
-   !top && topMovies();
+   topMovies();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 };

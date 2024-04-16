@@ -17,7 +17,7 @@ const useCasteAndCrew = (id, type) => {
   };
   useEffect(() => {
    getCaste();
-  }, [id]);
+  }, []);
 }
 
 export default useCasteAndCrew;

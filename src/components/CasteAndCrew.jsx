@@ -9,7 +9,7 @@ const CasteAndCrew = ({ id, type }) => {
   return (
     <div className="font-bold">
       <h1 className="text-2xl py-2">Cast</h1>
-      <div className="sm:flex overflow-x-auto no-scrollbar flex">
+      <div className="sm:flex overflow-x-scroll no-scrollbar flex">
         {castAndCrew?.map((cast) => (
           <div key={cast.id} className="sm:flex-shrink-0 w-40 flex flex-col pe-2">
             <img

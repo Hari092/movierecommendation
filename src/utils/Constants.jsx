@@ -18,8 +18,6 @@ export const apiOptions = {
 
 export const IMG_URL = "https://image.tmdb.org/t/p/w500";
 
-export const OPEN_AI_KEY = import.meta.env.VITE_OPEN_AI_KEY;
-
 export const dummy = "https://youtu.be/Z3x9i7njCCo?si=pvSoWfk8KoG5gw-n";
 export const dummyImg =
   "https://img.freepik.com/premium-vector/user-profile-icon-flat-style-member-avatar-vector-illustration-isolated-background-human-permission-sign-business-concept_157943-15752.jpg?size=338&ext=jpg&ga=GA1.1.1687694167.1711756800&semt=ais";

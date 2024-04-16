@@ -25,6 +25,7 @@ const useMovieDetails = ( id, type ) => {
         throw new Error("Network response was not ok");
       }
       const json = await data?.json();
+      console.log(json);
       dispatch(addMovieDetails(json));
       setIsLoading(false);
     } catch (error) {
